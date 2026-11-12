@@ -12,9 +12,9 @@
 
             div.content {
                 background-color: white;
-                margin: 0px 10% 80px 10%;
-                padding: 0px 30px 30px 30px;
-                min-width: 350px;
+                margin: 4px 8px 40px 8px;
+                padding: 0px 8px 20px 8px;
+                /*min-width: 350px; */
                 box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
                 overflow: visible;
             }
@@ -78,8 +78,7 @@
             table.info, td {
                 text-align: center;
                 vertical-align: top;
-                font-size: 14px;
-
+                font-size: 12px;
             }
             
             table.info, th {
@@ -96,7 +95,7 @@
             }
 
             div.col {
-                width: 45%;
+                width: 100%;
                 margin-top: 20px;
             }
 
@@ -110,11 +109,12 @@
 
             div.col1 {
                 display:inline-block;
-                margin-right: 10%;
+                /*margin-right: 10%;*/
+                margin-bottom: 20px;
             }
 
             div.col2 {
-                float: right;
+                /*float: right;*/
             }
 
             div.Ingredients p {
@@ -148,4 +148,44 @@
             table.Instructions tr {
                 vertical-align: top;
             }
+
+           /* deskop style */
             
+            @media only screen and (min-width: 768px) {
+              div.content {
+                margin: 0px 10% 80px 10%;
+                padding: 0px 30px 30px 30px;
+                min-width: 350px;
+            }
+            table.info {
+                height: 80px
+            }
+            
+            table.info, td {
+                font-size: 14px;
+
+            }
+            
+            table.info, th {
+                font-size: 16px;
+            }
+
+            div.col {
+                width: 45%;
+            }
+
+            div.col1 {
+                margin-right: 10%;
+            }
+
+            div.col2 {
+                float: right;
+            }
+        }    
+            @media only screen and (min-width: 900px) {
+              div.content {
+                margin: auto;
+                padding: auto;
+                min-width: 650px;
+            }
+        }
